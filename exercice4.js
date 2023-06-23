@@ -28,11 +28,10 @@ function updateClock() {
   right.innerHTML = "<p>" + hours + ":" + minutes + ":" + "<span>" + seconds + "</span></p>";
 }
 
-// Mettre à jour l'heure toutes les secondes
+// update date every sec
 setInterval(function() {
   date = new Date();
   updateClock();
 }, 1000);
 
-// Appeler la fonction initiale pour afficher l'heure actuelle
 updateClock();
